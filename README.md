@@ -2,6 +2,8 @@
 
 A comprehensive C# project utilizing Windows Forms and Access Database to facilitate car rental processes. Designed with a focus on user experience, the system features four main forms - Car Rental Main Screen, Cars Information, Book Your Car, and View Receipt - and utilizes an Access database comprising three tables: CarsData, CustomerInfo, and Bookings.
 
+[User Manual](CarRental-Manualv2.pdf):
+
 ## Table of Contents
 
 - [Introduction](#introduction)
