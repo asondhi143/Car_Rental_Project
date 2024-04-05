@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B13661F1-BA4F-4699-A410-88C1EB85414F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarRentalProject</RootNamespace>
+    <AssemblyName>CarRentalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBooking.Designer.cs">
+      <DependentUpon>FormBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCarInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarInfo.Designer.cs">
+      <DependentUpon>FormCarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReceipt.Designer.cs">
+      <DependentUpon>FormReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBooking.resx">
+      <DependentUpon>FormBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCarInfo.resx">
+      <DependentUpon>FormCarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReceipt.resx">
+      <DependentUpon>FormReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aventador.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Aventador.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Camaro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Challenger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\GWagon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Mustang.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Supra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Challenger2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Challenger2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Supra2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Camaro2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Aventador2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Mustang2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\GWagon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\MainScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Mustang.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
